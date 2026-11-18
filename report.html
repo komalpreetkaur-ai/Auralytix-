@@ -61,66 +61,70 @@
         </div>
 
         <!-- Navigation Links Hierarchy -->
-        <nav class="space-y-3.5">
+        <nav class="space-y-6">
           
           <!-- Section 1: Audits -->
-          <div class="space-y-1">
-            <span class="block px-3 text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] px-3 mb-2">
               Audits
-            </span>
-            <a href="index.html" class="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
-              <div class="flex items-center gap-2.5">
+            </div>
+            <div class="space-y-1">
+              <a href="index.html" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
                 <i data-lucide="layers" class="w-4 h-4"></i>
                 <span>All audits</span>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           <!-- Section 2: THIS AUDIT (Active Context) -->
-          <div class="space-y-1">
-            <span class="block px-3 text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] px-3 mb-2">
               This Audit
-            </span>
-            <a href="#overview" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold bg-blue-600 text-white shadow-sm shadow-blue-600/30 transition-all">
-              <i data-lucide="file-bar-chart" class="w-4 h-4"></i>
-              <span>Report</span>
-            </a>
-            <a href="pages.html?site=shourya-bajaj-akurdi-pune.com&id=bajaj-akurdi" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
-              <i data-lucide="file-text" class="w-4 h-4"></i>
-              <span>Page detail</span>
-            </a>
-            <a href="#" id="download-pdf-sidebar" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
-              <i data-lucide="download" class="w-4 h-4"></i>
-              <span>Download PDF</span>
-            </a>
+            </div>
+            <div class="space-y-1">
+              <a href="#overview" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-semibold bg-blue-600 text-white shadow-sm shadow-blue-600/30 transition-all">
+                <i data-lucide="file-bar-chart" class="w-4 h-4"></i>
+                <span>Report</span>
+              </a>
+              <a href="pages.html?site=shourya-bajaj-akurdi-pune.com&id=bajaj-akurdi" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>Page detail</span>
+              </a>
+              <a href="#" id="download-pdf-sidebar" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span>Download PDF</span>
+              </a>
+            </div>
           </div>
 
           <!-- Section 3: Account -->
-          <div class="space-y-1 pt-3 border-t border-[var(--border-subtle)]">
-            <span class="block px-3 text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] px-3 mb-2">
               Account
-            </span>
-            <div class="p-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-subtle)] space-y-2">
-              <div class="flex items-center justify-between text-xs">
-                <span class="text-[var(--text-secondary)] flex items-center gap-1.5 font-medium">
-                  <i data-lucide="coins" class="w-3.5 h-3.5 text-amber-500"></i>
-                  Credits
-                </span>
-                <span id="sidebar-credits" class="font-mono font-bold text-[var(--text-primary)]">659</span>
-              </div>
-              <div class="w-full bg-[var(--border-subtle)] h-1.5 rounded-full overflow-hidden">
-                <div class="bg-amber-500 h-full rounded-full" style="width: 88.8%"></div>
-              </div>
-              <div class="flex items-center justify-between text-[10px] text-[var(--text-muted)]">
-                <span>88.8% available</span>
-                <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">+ Top up</a>
-              </div>
             </div>
+            <div class="space-y-2">
+              <div class="px-3.5 py-3 rounded-2xl bg-[var(--bg-secondary)] border border-[var(--border-subtle)] space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-[var(--text-primary)] font-medium flex items-center gap-2">
+                    <i data-lucide="coins" class="w-4 h-4 text-amber-500"></i>
+                    Credits
+                  </span>
+                  <span id="sidebar-credits" class="font-mono font-bold text-[var(--text-primary)] text-sm">659</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-1.5 rounded-full" style="width: 88.8%"></div>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-[var(--text-muted)] pt-0.5">
+                  <span>88.8% available</span>
+                  <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">+ Top up</a>
+                </div>
+              </div>
 
-            <a href="#" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
-              <i data-lucide="log-out" class="w-4 h-4"></i>
-              <span>Sign out</span>
-            </a>
+              <a href="#" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-all">
+                <i data-lucide="log-out" class="w-4 h-4"></i>
+                <span>Sign out</span>
+              </a>
+            </div>
           </div>
 
         </nav>
